@@ -1,0 +1,11 @@
+h2 {
+  margin-top: 25vh;
+}
+form {
+  text-align: center;
+}
+.entradaDados {
+  height: 45px;
+  margin: 10px;
+  text-align: start;
+}

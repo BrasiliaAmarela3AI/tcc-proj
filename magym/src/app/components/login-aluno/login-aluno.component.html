@@ -1,0 +1,27 @@
+<div class="container align-self-center loginintegranteapm">
+  <form class="form-group">
+    <h2>Login</h2>
+    <h4 class="mb-4">Aluno</h4>
+    <div>
+      <img class="icon" src="../../../assets/user_icon.svg" />
+      <input class="entradaDados" type="text" placeholder="Digite seu RM" />
+    </div>
+    <div>
+      <img class="icon" src="../../../assets/lock_icon.svg" />
+      <input class="entradaDados" type="password" placeholder="Senha" />
+    </div>
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" />
+          <label class="form-check-label">Lembrar senha</label>
+        </div>
+        <a routerLink="/resetar-senha">Esqueci minha senha</a>
+      </div>
+    </div>
+    <button type="submit" class="btn">Login</button>
+    <p>
+      Não possui conta? <a href="#" routerLink="/cadastro-aluno">Cadastre-se</a>
+    </p>
+  </form>
+</div>

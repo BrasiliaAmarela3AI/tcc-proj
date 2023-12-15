@@ -1,0 +1,409 @@
+<div class="pagina-uniforme">
+  <nav class="navbar navbar-expand-lg menu-padrao">
+    <div class="container-fluid">
+      <a class="navbar-brand uniformes" [routerLink]="['#inicio']">UNIFORMES</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end menu"
+        id="navbarNav"
+      >
+        <div class="row home">
+          <div class="col-sm-1 col-md-2">
+            <img class="icon-menu" src="../../../assets/icon-home.svg" />
+          </div>
+          <div class="col-sm-9 col-md-8">
+            <a [routerLink]="['/']">Home</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 col-md-2 mt-lg-2">
+            <img class="icon-menu" src="../../../assets/user_icon.svg" />
+          </div>
+          <div class="col-sm-9 col-md-8">
+            <a [routerLink]="['/usuario']">Entre ou Cadastre-se</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1 col-md-2 mt-lg-2">
+            <img class="icon-menu" src="../../../assets/sacola.svg" />
+          </div>
+          <div class="col-sm-9 col-md-8">
+            <a href="">Minha Sacola </a>
+            <a href=""><strong>R$ 0, 00</strong></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section class="justify-content-center secao1">
+    <h1 class="title">CATEGORIAS</h1>
+    <nav class="nav2">
+      <ul class="nav__menu">
+        <li class="nav__menu-item">
+          <a (click)="('Camisetas')" routerLink="/camisetas">Camisetas</a>
+        </li>
+        <li class="nav__menu-item">
+          <a (click)="('Calças')" routerLink="/calca" >Calças</a>
+        </li>
+        <li class="nav__menu-item">
+          <a (click)="('Bermudas')">Bermudas</a>
+        </li>
+        <li class="nav__menu-item">
+          <a (click)="('Blusão')">Blusão</a
+          ><!--*(click)="uniformeClicado(2)"*-->
+        </li>
+        <li class="nav__menu-item">
+          <a (click)="('Jaleco')">Jaleco</a
+          ><!--*(click)="uniformeClicado(2)"*-->
+        </li>
+        <!-- Adicione eventos de clique para outras categorias -->
+      </ul>
+    </nav>
+  </section>
+
+  <section id="categorias">
+  </section>
+
+  <section id="secao2">
+    <div>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div><h1 class="titulo-secao">UNIFORMES FEMININOS</h1></div>
+        <div class="carousel-inner carousel-ajuste">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  [routerLink]="['/calca-feminina']"
+                  src="../../../assets/calça-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CALÇA FEMININA</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/camiseta-preta-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                routerLink="/camisa-preta-fem"/>
+                <p>CAMISETA (PRETA)</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/blusao-feminino.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BLUSÃO</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/bermuda-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BERMUDA FEMININA</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/camiseta-branca-feminina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CAMISETA (BRANCA)</p>
+              </div>
+              <div class="col-sm-12 col-md-6 jaleco">
+                <img
+                  src="../../../assets/jaleco-frente.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>JALECO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="secao3">
+    <div>
+      <div id="carouselExampleIndicator" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div><h1 class="titulo-secao">UNIFORMES MASCULINOS</h1></div>
+        <div class="carousel-inner carousel-ajuste justify-content-center">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/calça-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CALÇA MASCULINA</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/camiseta-branca-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CAMISETA (BRANCA)</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/bermuda-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BERMUDA MASCULINA</p>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <img
+                  src="../../../assets/blusao-masculino.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>BLUSÃO</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <img
+                  [routerLink]="['/camiseta-preta']"
+                  src="../../../assets/camiseta-preta-masculina.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>CAMISETA (PRETA)</p>
+              </div>
+              <div class="col-sm-12 col-md-6 jaleco">
+                <img
+                  src="../../../assets/jaleco-frente.png"
+                  class="imagens-uniforme"
+                  alt=""
+                />
+                <p>JALECO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicator"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicator"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-secondary"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="rodape">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 rodapeinfo">
+          <h1>CONTATO</h1>
+          <div class="row ml-2">
+            <div class="col-sm-1 col-md-2">
+              <img
+                class="icons-rodape"
+                src="../../../assets/icon-telefone.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-4">
+              <p>Telefone: <span class="itens">11 2905-1128</span></p>
+            </div>
+          </div>
+          <div class="row ml-2">
+            <div class="col-sm-1 col-md-2">
+              <img
+                class="icons-rodape"
+                src="../../../assets/icon-email.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-8">
+              <p>Emails:</p>
+              <p class="emailfooter">
+                Diretoria:
+                <a class="itens" href="mailto:e064dir@cps.sp.gov.br">
+                  e064dir@cps.sp.gov.br</a
+                >
+              </p>
+              <p class="emailfooter">
+                Diretoria Administrativa:
+                <a class="itens" href="mailto:e064adm@cps.sp.gov.br">
+                  e064adm@cps.sp.gov.br</a
+                >
+              </p>
+              <p class="emailfooter">
+                Diretoria Acadêmica:
+                <a class="itens" href="mailto:e064acad@cps.sp.gov.br">
+                  e064acad@cps.sp.gov.br</a
+                >
+              </p>
+            </div>
+          </div>
+          <div>
+            <h4 class="mt-5">Localização</h4>
+            <p>
+              Rua Alcântara, 113 - Vila Guilherme - CEP: 02110-010 - São
+              Paulo/SP
+            </p>
+          </div>
+          <div>
+            <h4>Horário de atendimento</h4>
+            <p>Seg. a Sex. das 08h às 17h</p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 rodape2">
+          <h1>ACOMPANHE NAS REDES SOCIAIS</h1>
+          <div class="row">
+            <div class="d-flex justify-content-end">
+              <div class="row instagram">
+                <div class="col-5">
+                  <img
+                    class="icons-rodape"
+                    src="../../../assets/icon-instagram.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-5">
+                  <a href="https://www.instagram.com/etechoracio/" class="itens"
+                    >@etechoracio</a
+                  >
+                </div>
+              </div>
+              <div class="row instagram">
+                <div class="col-5">
+                  <img
+                    class="icons-rodape"
+                    src="../../../assets/icon-instagram.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-5">
+                  <a href="https://www.instagram.com/magym_has/" class="itens"
+                    >@magym_has</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="logorodape">
+            <img src="../ ../../../../assets/logomagym.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
