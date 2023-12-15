@@ -1,0 +1,13 @@
+.cadastroaluno {
+  text-align: center;
+  color: #242424;
+  height: 100vh;
+  padding-top: 6%;
+}
+.lembrarsenha{
+  text-align: end;
+  margin-right: 40%;
+}
+.lembrarsenha label{
+  margin-left: 5px;
+}

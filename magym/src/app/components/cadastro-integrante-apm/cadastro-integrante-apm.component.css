@@ -1,0 +1,12 @@
+.cadastro-integrante {
+  text-align: center;
+  color: #242424;
+  padding-top: 2vh;
+}
+.lembrarsenha {
+  text-align: end;
+  margin-right: 40%;
+}
+.lembrarsenha label {
+  margin-left: 5px;
+}
