@@ -1,0 +1,140 @@
+/**Padrao****/
+.pagina-uniforme {
+  text-align: center;
+  font-weight: 600;
+  background-color: #f6f6f6;
+}
+
+/************MENU CATEGORIA*************/
+.secao1 {
+  height: 60vh;
+  border-bottom: 1px solid #b61e1e;
+  box-shadow: 0 7px 7px rgb(173, 15, 15);
+  color: #242424;
+}
+#secao2 {
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+.nav__submenu {
+  display: none;
+}
+
+.nav__menu-item:hover .nav__submenu {
+  display: block;
+}
+html {
+  box-sizing: border-box;
+}
+
+.nav2 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav2 h1 {
+  width: 500px;
+  margin: 100px auto 20px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.nav2 {
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 30vh;
+}
+
+.nav2 a {
+  display: block;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #242424;
+  border: 4px solid #d5342a;
+  border-radius: 50px;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.nav__menu {
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.nav__menu-item {
+  display: inline-block;
+}
+
+/*******SECAO FEMININA E MASCULINA*********/
+@media (max-width: 970px) {
+  .inicio {
+    height: 150vh;
+  }
+  #secao3 .imagens-uniforme,
+  #secao2 .imagens-uniforme {
+    height: 100vh;
+    padding-top: 0;
+  }
+}
+.imagens-uniforme {
+  margin-top: 20px;
+  width: 300px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 30px;
+}
+.carousel-ajuste {
+  height: 90vh;
+  font-weight: 600;
+  font-size: 20px;
+}
+#secao2 .imagens-uniforme {
+  margin-top: 10vh;
+  padding: 20px;
+  border: none;
+}
+
+#secao3 .imagens-uniforme {
+  margin-top: 10vh;
+  padding: 20px;
+  border: none;
+}
+#secao3 p {
+  color: #f6f6f6;
+}
+.carousel {
+  width: 700px;
+  overflow: hidden;
+}
+.slide {
+  display: inline-block;
+  width: 100%;
+  transition: transform 1s ease;
+}
+#secao3 {
+  background: linear-gradient(
+    0deg,
+    rgba(36, 36, 36, 1) 0%,
+    rgba(147, 147, 147, 1) 24%,
+    rgba(209, 209, 209, 1) 44%,
+    rgba(221, 221, 221, 1) 70%,
+    rgba(246, 246, 246, 1) 100%
+  );
+
+  height: 100vh;
+  padding-top: 20vh;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  border-radius: 50px;
+}
+.carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px;
+  height: 20px;
+  margin: 30px;
+}

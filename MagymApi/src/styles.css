@@ -1,0 +1,196 @@
+/*padrão botão*/
+.btn {
+  margin: 30px 10px 20px 0;
+  background: #d5342a;
+  width: 200px;
+  border-radius: 20px;
+  color: #f6f6f6;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+.btn:hover {
+  background-color: #f4594e;
+}
+
+/*input forms*/
+a,
+label {
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+a{
+  color: #f4594e;
+}
+
+input[type="checkbox"] {
+  margin-top: 12px;
+}
+
+.entradaDados {
+  text-align: start;
+  padding: 0 4% 0 40px;
+  border-radius: 50px;
+  background-color: #f6f6f6;
+  border: none;
+  margin: 2% 0 0 0;
+  height: 45px;
+}
+
+.cadastro {
+  margin: 5px;
+}
+
+.tituloPrincipal {
+  margin-top: 3%;
+}
+
+.entradaDados:focus {
+  border: none;
+}
+
+.icon {
+  width: 15px;
+  fill: #f6f6f6;
+  height: 15px;
+  position: absolute;
+  margin: 25px 0 0 20px;
+}
+/*NAVBAR*/
+.icon-menu {
+  width: 20px;
+}
+.menu-padrao {
+  background: linear-gradient(
+    180deg,
+    rgba(186, 186, 186, 1) 0%,
+    rgba(194, 192, 192, 1) 24%,
+    rgba(209, 209, 209, 1) 44%,
+    rgba(221, 221, 221, 1) 70%,
+    rgba(246, 246, 246, 1) 100%
+  );
+  font-size: 16x;
+  text-align: left;
+  font-weight: 700;
+}
+.menu a {
+  color: #242424;
+}
+.menu {
+  font-weight: 600;
+}
+.home {
+  margin: -5px 30px 0 20px;
+}
+
+/*RODAPE***/
+.rodape{
+  width: 100%;
+}
+.icons-rodape {
+  color: #fff;
+  width: 40px;
+}
+
+.itens {
+  color: #938b8b;
+  font-weight: 900;
+  margin-right: 10px;
+}
+.instagram {
+  margin-top: 10px;
+}
+.logorodape img {
+  margin-top: 50px;
+  width: 100px;
+  border-radius: 60px;
+}
+
+.rodapeinfo {
+  text-align: start;
+  padding-left: 10%;
+}
+.rodape2 {
+  text-align: end;
+  padding-right: 10%;
+}
+.rodape {
+  color: #f6f6f6;
+  background-color: hsl(0, 0%, 14%);
+  height: 100vh;
+  /*border-top: 2px solid #141313;*/
+  padding-top: 5%;
+}
+
+@media (max-width: 970px) {
+  .rodape {
+    padding: 0 30px 0 30px;
+    text-align: start;
+    width: 100%;
+    height: 105vh;
+  }
+  .rodape2 {
+    margin-top: 15vh;
+  }
+}
+
+.compraragora {
+  background-color: #01db37;
+  border: 2px solid #01db37;
+  border-radius: 10px;
+  width: 200px;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.tamanhos{
+  border-radius: 10px;
+  margin-left: 1px;
+  border: 1px solid #242424;
+ background-color: #f6f6f6;
+ font-weight: 600;
+}
+/**********ALUGUEL ARMARIOS************/
+.titulo-aluguel{
+  margin: 10vh 45vh 0 45vh;
+  padding: 0 5vh 0 7vh;
+  background-color: #d5342a;
+  border: 2px solid #242424;
+  border-radius: 50px;
+}
+.titulo-escolha{
+  padding-left: 80vh;
+  padding-top: 3%;
+}
+* {
+  list-style-type: none;
+}
+.armario {
+  height: 115px;
+  width: 55px;
+  margin-bottom: 10px;
+}
+.disponível{
+  background: #008000;
+}
+.disponível label, .disponível{
+  cursor: pointer;
+}
+.ocupado{
+  background: #ccc;
+}
+.armario:hover{
+  background-image: url(./assets/armario.jpeg);
+}
+.coluna-armario {
+  margin-top: 1%;
+  padding-left: 10px;
+}
+.conjunto-armarios  {
+  padding-left: 25vh;
+}
+.numero-armario{
+  padding-top: 5vh;
+  padding-left: 2vh;
+}

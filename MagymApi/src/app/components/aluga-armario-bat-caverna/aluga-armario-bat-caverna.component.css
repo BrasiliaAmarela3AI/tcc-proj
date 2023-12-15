@@ -1,0 +1,12 @@
+.image {
+  background-image: url("../../../assets/a.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+a{
+  color: #000;
+}
+.titulo-aluguel{
+  padding-left: 30vh;
+}

@@ -1,0 +1,31 @@
+.camisetas {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.secao {
+  border-bottom: 4px solid #242424;
+  box-shadow: 10px rgba(0, 0, 0, 3);
+}
+.camisa {
+  margin-left: 15px;
+}
+.compraragora{
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.branca{
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.preta{
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #000;
+  width: 30px;
+  height: 30px;
+  margin-right: 40px;
+}

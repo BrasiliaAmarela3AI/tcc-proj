@@ -1,0 +1,15 @@
+.camisetas {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.secao {
+  border-bottom: 4px solid #242424;
+  box-shadow: 10px rgba(0, 0, 0, 3);
+}
+.camisa {
+  margin-left: 15px;
+}
+.CALCA {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
